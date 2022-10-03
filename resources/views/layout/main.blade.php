@@ -18,7 +18,7 @@
 
 
     <header class="container">
-        <a href="/index.html" class="logo">
+        <a href="{{route(home)}}" class="logo">
             <img class="logo" src="/img/ietec_logo.png" alt="Logo da IETEC">
         </a>
 

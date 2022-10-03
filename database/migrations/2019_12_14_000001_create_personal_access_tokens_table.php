@@ -23,14 +23,6 @@ return new class extends Migration
             $table->timestamp('expires_at')->nullable();
             $table->timestamps();
         });
-
-        Schema::create('planejamento_empresa', function (Blueprint $table) {
-            $table->id();
-            $table->string('nome_empresa', 255)->nullable();
-            $table->string('tipo', 255)->nullable();
-            $table->string('assunto', 255)->nullable();
-            $table->timestamp('data')->nullable();
-        });
     }
 
     /**

@@ -1,0 +1,75 @@
+body {
+    background-color: darkslateblue;
+}
+
+#titulo_relatorio {
+    color: white;
+}
+
+#principal_relatorio {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#filtro {
+    border-radius: 10px;
+    margin-bottom: 70px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-style: none;
+}
+
+#lista_relatorio {
+    text-align: right;
+    background-color: white;
+    padding-top: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+#tabela_relatorio {
+    width: 900px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+th,
+td {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.tr_r:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tr_r:hover {
+    background-color: #ddd;
+}
+
+#gerar {
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    border-style: none;
+}
+
+#tr_titulo {
+    background-color: blue;
+    color: white;
+}
+
+th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.lixeira {
+    background-color: red;
+    border-style: none;
+    border-radius: 5px;
+}

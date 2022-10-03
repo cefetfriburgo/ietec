@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: darkslateblue;
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    display: flex;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+}
+#LogoIetec{
+    width: 95px;
+    padding: 4px;
+}
+#Navegacao{
+    margin-left: 75%;
+    margin-top: 1.8%;
+}
+#NavegacaoUl {
+    display: flex;    
+}
+.NavegacaoLi:first-child{
+    margin-right: 10px;
+}
+.NavegacaoLi {
+    list-style: none;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+.NavegacaoLi a{
+    text-decoration: none;
+    color: black;
+}
+
+#Login:hover {
+    background-color: gray;
+    
+}
+
+#QuemSomos:hover {
+    background-color: gray;
+    
+}
+/* Graficos Pequenos */
+#graphic_pequeno {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.GraphicSmall {
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px 0px 10px 0px;
+    margin: 0 auto;
+}
+
+/* Graficos grandes*/
+#graphic_big {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.GraphicBig {
+    width: 32%;
+    background-color: white;
+    margin-left: 10px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px 0px 10px 0px;
+}
+
+/* Trofeus */
+
+#trofeu {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px 0px 10px 0px;
+    margin-top: 20px;
+}

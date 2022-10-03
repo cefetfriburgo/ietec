@@ -1,0 +1,63 @@
+body {
+    background-image: linear-gradient(83.2deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+    /* background: url(fundo.jpg) no-repeat top center; */
+}
+
+/* formatação do campo login */
+fieldset {
+    align-items: center;
+    text-align: center;
+    margin: 5em auto;
+    width: 50%;
+    min-width: 350px;
+    max-width: 500px;
+    height: 400px;
+    background-color: rgba(207, 207, 207, 0.4);
+    border-radius: 10px 0;
+    border: none;
+}
+
+fieldset legend {
+    margin: 0 auto;
+}
+
+/* formatação das div´s */
+.login_area {
+    padding: 0.5em 0;
+    margin: 0.5em auto;
+    width: 90%;
+}
+
+.login_area input {
+    width: 90%;
+    height: 2.5em;
+    margin: 0;
+    background-color: azure;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 40px;
+}
+
+/* e-mail e senha */
+#email {
+    background-image: url(/img/icone-usuario.png);
+}
+
+#passw {
+    background-image: url(/img/icone-cadeado.png);
+    border: none;
+}
+
+/* formmatação do botão */
+#button {
+    color: white;
+    background-color: rgb(253, 124, 4);
+    padding: 0;
+
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: orange;
+}

@@ -2,31 +2,31 @@
 
 use Illuminate\Support\Facades\Route;
 
-//use App\Http\Controllers;
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
 Route::get('/', function () {
+    return view('IETEC');
+})->name('home');
+
+Route::get('/teste', function () {
+    return view('teste');
+});
+
+Route::get('/dashboard', function () {
     return view('dashboard');
-});
+})->name('dash');
 
-Route::get('/empresa/planejamento', 'App\Http\Controllers\EmpresaController@listaPlanejamento');
-Route::get('/empresa/planejamento/{plano_id}', 'App\Http\Controllers\EmpresaController@detalharPlano')->where('plano_id', '[0-9]+');
-Route::get('/empresa/planejamento/edit/{plano_id}', 'App\Http\Controllers\EmpresaController@editarPlano')->where('plano_id', '[0-9]+');
-Route::get('/empresa/planejamento/remove/{plano_id}', 'App\Http\Controllers\EmpresaController@removerPlano')->where('plano_id', '[0-9]+');
+Route::get('/quem_somos', function (){
+    return view('/quem_somos');
+})->name('sobre');
 
-Route::get('/empresa/monitoramento', function () {
-    return view('empresa.monitoramento');
-});
+Route::get('/relatorio', function () {
+    return view('/relatorio');
+})->name('relatorio');
 
-Route::get('/empresa/relatorio', function () {
-    return view('empresa.relatorio');
-});
+Route::get('/login', function () {
+    return view('/login');
+})->name('login');
+
+Route::get('/modelo', function (){
+    return view('/layouts/modelo');
+})->name('modelo');
+
