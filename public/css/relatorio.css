@@ -20,6 +20,18 @@ body {
     border-style: none;
 }
 
+.pesquisar {
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 5px;
+    box-shadow: none;
+    border-style: none;
+}
+
+.pesquisar:hover {
+    background-color: #cccccc;
+}
+
 #lista_relatorio {
     text-align: right;
     background-color: white;
@@ -34,8 +46,7 @@ body {
     margin-left: 50px;
 }
 
-th,
-td {
+th, td {
     text-align: center;
     border-bottom: 1px solid black;
 }
@@ -49,6 +60,7 @@ td {
 }
 
 #gerar {
+    cursor: pointer;
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -69,6 +81,7 @@ th {
 }
 
 .lixeira {
+    cursor: pointer;
     background-color: red;
     border-style: none;
     border-radius: 5px;

@@ -26,6 +26,14 @@ Route::get('/login', function () {
     return view('/login');
 })->name('login');
 
+Route::get('/planejamento', function (){
+    return view('/planejamento');
+})->name('planejamento');
+
+Route::get('/monitoramento', function () {
+    return view('/monitoramento');
+})->name('monitoramento');
+
 Route::get('/modelo', function (){
     return view('/layouts/modelo');
 })->name('modelo');

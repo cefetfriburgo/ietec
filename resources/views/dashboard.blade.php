@@ -19,8 +19,8 @@
         </a>
         <nav id="Navegacao">
             <ul id="NavegacaoUl">
-                <li class="NavegacaoLi" id="QuemSomos"><a href="{{route('sobre')}}">Quem Somos?</a></li>
-                <li class="NavegacaoLi" id="Login"><a href="{{route('login')}}">Login</a></li>
+                <li class="NavegacaoLi" class="link"><a href="{{route('monitoramento')}}">Monitoramento</a></li>
+                <li class="NavegacaoLi" class="link"><a href="{{route('planejamento')}}">Planejamento</a></li>
             </ul>
         </nav>
     </header>

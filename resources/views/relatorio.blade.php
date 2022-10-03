@@ -16,6 +16,7 @@
             <input type="Date">
             <input type="text" placeholder="Empresas">
             <input type="text" placeholder="Ordem">
+            <input type="button" value="Pesquisar" class="pesquisar">
 
         </div>
         <div id="lista_relatorio">

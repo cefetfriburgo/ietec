@@ -1,4 +1,4 @@
-<<<<<<< HEAD:css/style.css
+
 /* Cores:
         1. #003f5c
         2. #4c86af
@@ -22,7 +22,7 @@ body {
     max-width: 100%;     
 }
 
-html,body{
+html, body{
     height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -178,7 +178,6 @@ section.sobre{
 }
 
 /* Quem somos */
-=======
 body {
     background-color: lightgray;
 }
@@ -229,4 +228,3 @@ tr:hover {background-color: rgb(234, 234, 255)}
     margin-top: -5%;
     float: right;
 }
->>>>>>> GabrielSouzaVerly:css/teste.css

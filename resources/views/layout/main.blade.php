@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>IETEC | @yield('title')</title>
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/app.css">
     
     <!--
     <link rel="stylesheet" href="/css/style.css">
@@ -18,7 +18,7 @@
 
 
     <header class="container">
-        <a href="{{route(home)}}" class="logo">
+        <a href="{{route('home')}}" class="logo">
             <img class="logo" src="/img/ietec_logo.png" alt="Logo da IETEC">
         </a>
 
@@ -28,14 +28,14 @@
         <nav class="side-bar">
             <ul>
                 <li><a href="/">Início</a></li>
-                <li><a href="/empresa/planejamento">
+                <li><a href="{{route('planejamento')}}">
                         <span class="mx-2"></span>Planejamento</a>
                 </li>
                 <li> 
-                    <a href="/empresa/monitoramento">
+                    <a href="{{route('monitoramento')}}">
                         <span class="mx-2"></span>Monitoramento</a>
                 </li>
-                <li> <a href="/empresa/relatorio">
+                <li> <a href="{{route('relatorio')}}">
                         <span class="mx-2"></span>Relatório</a>
                 </li>
             </ul>
