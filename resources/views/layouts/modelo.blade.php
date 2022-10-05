@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <link href="/css/app.css" rel="stylesheet" type="text/css" >
     <link rel="Icon" href="/img/ietec_logo.png">
-    <title>IETEC - Cefet RJ</title>
+
+    @yield('complementos_css')
+    
+    <title>@yield('title_pag')</title>
 </head>
+
 <body>
-        <header>
-            <div class="central_header">
-                <div class="menu">
-                    @yield('menu')
-                </div> <!--menu-->
-            </div><!--header-->
-        </header>
-            
-            <div class="principal">
-                    @yield('footer')
-            </div>   
+    <header>
+        <a href="{{route('home')}}">
+            <img id="LogoIetec" src="/img/logoietec.png">
+        </a>
+        <div class="central_header">
+            <div class="menu">
+                @yield('menu')
+            </div> <!--menu-->
+        </div><!--header-->
+    </header>
         
+    <main>
+        @yield('principal')
+    </main>   
+    
+    
 </body>
-    @yield('script')
+    @yield('scripts')
 </html>

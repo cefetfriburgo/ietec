@@ -23,6 +23,14 @@ return new class extends Migration
             $table->timestamp('expires_at')->nullable();
             $table->timestamps();
         });
+
+        Schema::create('evento', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome', 50);
+            $table->string('tipo', 50);
+            $table->integer('ano')->nullable();
+            $table->date('data_realizacao')->nullable();
+        });
     }
 
     /**

@@ -1,3 +1,44 @@
+let xhttp = new XMLHttpRequest();
+
+let url = '/dashboard/empresasSetor';
+
+let criaOpcoes = (tamRelativo, habilitaLegenda, titulo) => {
+  return {
+    maintainAspectRatio: tamRelativo, //false
+    legend: { display: habilitaLegenda }, //false
+    title: {
+      display: true,
+      text: titulo //titulo
+    }
+  }
+}
+const carregaGrafSetor = (containerId, tipoGraf, dados, opcoes) => {
+  const elemHTML = document.getElementById(containerId)
+  new Chart(elemHTML, {type: tipoGraf,data: dados, options: opcoes});
+}
+
+xhttp.onreadystatechange = function() {
+  if(this.readyState==4 && this.status==200) {
+    let respostaServidor = JSON.parse(this.responseText);
+    console.log(respostaServidor);
+    let data = {}
+    data.labels = respostaServidor.labels
+    data.datasets = []
+    objDataset = {}
+
+    objDataset.label = respostaServidor.datasets[0].label
+    objDataset.backgroundColor = respostaServidor.datasets[0].backgroundColor
+    objDataset.data = respostaServidor.datasets[0].data
+
+    data.datasets.push(objDataset)
+    const opcoes = criaOpcoes(false, false, 'Empresas por Setor')
+    carregaGrafSetor("bar-chart", "bar", data, criaOpcoes(false, false, opcoes))
+  }
+}
+
+xhttp.open('GET', url, false);
+xhttp.send();
+
 // GraficosPequenos
 new Chart(document.getElementById("barSmallChart"), {
     type: 'bar',
@@ -84,28 +125,7 @@ new Chart(document.getElementById("barSmallChart"), {
     }
   })
   
-  //Gráficos Grandes
-  new Chart(document.getElementById("bar-chart"), {
-    type: 'bar',
-    data: {
-      labels: ["Intelicia", "macrohard", "Brinnance", "NVideo", "Escafoni Pizza`s"],
-      datasets: [
-        {
-          label: "Renda Anual",
-          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-          data: [-10000000, 45709086, 3070008, 25741146, 58005200]
-        }
-      ]
-    },
-    options: {
-      maintainAspectRatio: false,
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Melhor Linguagem'
-      }
-    }
-  });
+  
   
   new Chart(document.getElementById("pie-chart"), {
     type: 'pie',

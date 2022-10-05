@@ -2,29 +2,39 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\DashboardController;
+/**
+ * Rotas do index
+ */
+
 Route::get('/', function () {
-    return view('IETEC');
+    return view('ietec');
 })->name('home');
-
-Route::get('/teste', function () {
-    return view('teste');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->name('dash');
 
 Route::get('/quem_somos', function (){
     return view('/quem_somos');
 })->name('sobre');
 
-Route::get('/relatorio', function () {
-    return view('/relatorio');
-})->name('relatorio');
-
 Route::get('/login', function () {
     return view('/login');
 })->name('login');
+
+/*
+Rotas do Login
+*/
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dash');
+
+/*
+Rotas do Dashboard
+*/
+Route::get('/dashboard/empresasSetor', [DashboardController::class, 'listEmpresasPorSetor'])->name("dashboardEmpresasPorSetor");
+
+
+Route::get('/relatorio', function () {
+    return view('/relatorio');
+})->name('relatorio');
 
 Route::get('/planejamento', function (){
     return view('/planejamento');
