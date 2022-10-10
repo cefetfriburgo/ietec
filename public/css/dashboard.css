@@ -66,6 +66,7 @@ header {
     border: 1px solid black;
     border-radius: 10px 0px 10px 0px;
     margin: 0 auto;
+    margin-left: 5px;
 }
 
 /* Graficos grandes*/
@@ -87,6 +88,7 @@ header {
 /* Trofeus */
 
 #trofeu {
+    text-align: center;
     background-color: white;
     border: 1px solid black;
     border-radius: 10px 0px 10px 0px;
