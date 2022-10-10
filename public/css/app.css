@@ -6,7 +6,7 @@
  */
 
 /* Estrutura básica do HTML  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,27 +22,27 @@ body {
     max-width: 100%;     
 }
 
-html,body{
+html, body {
     height: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
 /* Header */
-.central_header{
+.central_header {
     display: flex;
     flex-wrap: 1100px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
-header{
+header {
     height: 200px;
     padding: 20px 0;
     
 }
 
-.menu{
+.menu {
     width: 50%;
     padding-top: 30px;
     margin: 0 auto;
@@ -98,11 +98,11 @@ section.sobre{
     margin-left: 5%;
 }
 
-.texto_sobre h1{
+.texto_sobre h1 {
     font-size: 50px;
 }
 
-.texto_sobre p{
+.texto_sobre p {
     margin: 20px 0;
     color: black;
     font-size: 14px;
@@ -159,8 +159,6 @@ section.sobre{
     border-radius: 15px;    
     border-color: #003f5c;
     border: 15px;
-
-
 }
 
 .login button:hover{
@@ -174,109 +172,6 @@ section.sobre{
     border-radius: 10px;
     
 }
-
-/* Quem somos */
-
-
-/* Footer */
-footer h4{
-    margin-top: 0;
-}
-
-li :hover{
-    background-color: rgba(0, 0, 0, 0);
-}
-footer ul {
-    padding-left: 0;
-}
-.container{
-	max-width: auto;
-	margin:auto;
-}
-.footer-col{
-   width: 22%;
-   padding: 0 15px;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-@media (max-width:600px)
-{
-.footer-col {
-	margin: 15px;
-}
-
-a {
-	padding:4px;
-}
-}
-
-footer{
-	background-color: #00a2ff91;
-    padding: 70px 0;
-	margin-top: 2%;
-}
-
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #9802ac;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #ffffff;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #000000;
-	padding-left: 8px;
-}
-@media(max-width: 100%){
-  .footer-col{
-    width: 100%;
-    margin-bottom: 30px;
-  }
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(0, 153, 255, 0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #000000;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #0099ff81;
-	background-color: #000000;
-}
-
 
 /* Body do dashboard */
 #dash {
@@ -319,6 +214,7 @@ footer{
     border-radius: 5px;
     box-shadow:  3px 3px black;
 }
+
 /* Informações do dashboard gráficas*/
 .information_graphics{
     background: #cfcfcf;
@@ -328,11 +224,13 @@ footer{
     border-radius: 5px;
     box-shadow: 7px 5px black;
 }
+
 /* h1 trofeu */
 #trofeu{
     text-align: center;
     font-size: 40px;
 }
+
 /* 'Sala' de Troféus */
 #sala_trofeu{
     display: flex;

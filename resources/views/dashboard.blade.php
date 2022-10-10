@@ -19,7 +19,7 @@ IETEC - Principal
     @endsection
 
     @section('principal')
-        <section id="graphic_pequeno">
+        <section id="graphic_small">
             <div class="GraphicSmall">
                 <canvas id="barSmallChart"></canvas>
             </div>
@@ -46,9 +46,6 @@ IETEC - Principal
 
         <section id="trofeu">
             <figure id="">
-                <img src="/img/trofeu1.png" alt="">
-                <img src="/img/trofeu1.png" alt="">
-                <img src="/img/trofeu1.png" alt="">
                 <img src="/img/trofeu1.png" alt="">
                 <img src="/img/trofeu1.png" alt="">
                 <img src="/img/trofeu1.png" alt="">

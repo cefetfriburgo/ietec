@@ -149,7 +149,7 @@ new Chart(document.getElementById("barSmallChart"), {
   new Chart(document.getElementById("radar-chart"), {
     type: 'radar',
     data: {
-      labels: ["Pizzaria Escalfoni", "Habbob's", "Nilson Hacker", "CSS", "HTML"],
+      labels: ["JS", "PHP", "CPP", "CSS", "HTML"],
       datasets: [
         {
           label: "1950",
