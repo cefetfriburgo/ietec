@@ -6,11 +6,6 @@
 
     <title>IETEC | @yield('title')</title>
     <link rel="stylesheet" href="/app.css">
-    
-    <!--
-    <link rel="stylesheet" href="/css/style.css">
--->
-    <link rel="stylesheet" href="/css/estilo.css">
 
 </head>
 <body>

@@ -36,7 +36,7 @@ Route::get('/relatorio', function () {
     return view('/relatorio');
 })->name('relatorio');
 
-Route::get('/planejamento', function (){
+Route::get('/planejamento', function () {
     return view('/planejamento');
 })->name('planejamento');
 
@@ -47,4 +47,3 @@ Route::get('/monitoramento', function () {
 Route::get('/modelo', function (){
     return view('/layouts/modelo');
 })->name('modelo');
-
