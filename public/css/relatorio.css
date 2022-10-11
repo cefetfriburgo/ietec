@@ -1,5 +1,5 @@
 body {
-    background-color: darkslateblue;
+    background-color: #4c86af;
 }
 
 #titulo_relatorio {
@@ -64,14 +64,14 @@ th, td {
     margin-right: 50px;
     margin-top: 10px;
     margin-bottom: 20px;
-    background-color: blue;
+    background-color: #003f5c;
     border-radius: 5px;
     color: white;
     border-style: none;
 }
 
 #tr_titulo {
-    background-color: blue;
+    background-color: #003f5c;
     color: white;
 }
 
