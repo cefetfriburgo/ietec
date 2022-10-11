@@ -123,58 +123,6 @@ section.sobre{
 
 }
 
-
-/* Tela de login */
-.login{
-    text-align: center;
-}
-
-#login_img{
-    width: 18%;
-    margin-top: 10%;
-    padding: 3%;
-}
-
-.input_do_login{
-    margin-bottom: 1%;
-    
-}
-
-.login a{
-    text-decoration: none;
-    color: black;
-}
-
-.login button {
-    background-color: none;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 15px;    
-    border-color: #003f5c;
-    border: 15px;
-
-
-}
-
-.login button:hover{
-    background-color: #003f5c;
-    color: white;
-}
-
-/* Inputs do login */
-.input_do_login{
-    padding: 0.3%;
-    border-radius: 10px;
-    
-}
-
 /* Quem somos */
 
 
