@@ -11,18 +11,16 @@ body {
 
 header {
     background-color: white;
-    display: flex;
-    height: 100px;
-    width: 100%;
+    display: block;
     margin: 0 auto;
 }
 
-#LogoIetec{
+#LogoIetec {
     width: 95px;
     padding: 4px;
 }
 
-#Navegacao{
+#Navegacao {
     margin-left: 75%;
     margin-top: 1.8%;
 }
@@ -31,7 +29,7 @@ header {
     display: flex;    
 }
 
-.NavegacaoLi:first-child{
+.NavegacaoLi:first-child {
     margin-right: 10px;
 }
 
@@ -43,7 +41,7 @@ header {
     padding: 5px;
 }
 
-.NavegacaoLi a{
+.NavegacaoLi a {
     text-decoration: none;
     color: black;
 }
@@ -53,7 +51,7 @@ header {
 }
 
 /* Graficos Pequenos */
-#graphic_pequeno {
+#graphic_small {
     display: flex;
     width: 80%;
     margin: 0 auto;
