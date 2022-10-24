@@ -8,7 +8,7 @@ use App\Http\Controllers\DashboardController;
  * Rotas do index
  */
 
-Route::get('/', function () {
+Route::get('/ietec', function () {
     return view('ietec');
 })->name('home');
 

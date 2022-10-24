@@ -12,13 +12,15 @@
 
 <body>
     <header>
-    <a href="{{route'home'}}">
-        <img id="logoPlanejamento" src="/img/ietec_logo.png" alt="">
-    </a>
-    <nav>
-        <ul><a href="{{route'monitoramento'}}">Monitoramento</a></ul>
-        <ul><a href="{{route'planejamento'}}">Planejamento</a></ul>
-    </nav>
+        <a href="{{route('home')}}">
+            <img src="/img/ietec_logo.png" alt="Logo" width="100px">
+        </a>
+        <nav>
+            <ul id="links">
+                <li><a href="{{route('monitoramento')}}">Monitoramento</a></li>
+                <li><a href="{{route('dash')}}">Dashboard</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div>
@@ -30,11 +32,13 @@
             <input type="search" id="pesquisa_input">
 
             <label>Tipos</label>
+            <br>
             <input type="checkbox" name="tipo" value="tecnologias">Tecnologias <br>
             <input type="checkbox" name="tipo" value="capital">Capital <br>
-            <input type="checkbox" name="tipo" value="mercado">Mercado
+            <input type="checkbox" name="tipo" value="mercado">Mercado <br>
             <button>Pesquisar</button>
         </div>
+        <br>
         <table>
             <tr>
                 <th>Data</th>

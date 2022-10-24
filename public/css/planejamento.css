@@ -1,3 +1,32 @@
-
-
 /* Header */
+header {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#logoPlanejamento {
+    width: 95px;
+
+}
+
+header nav {
+    margin-left: 60%;
+}
+
+#links {
+    display: flex;
+}
+
+#links a {
+    text-decoration: none;
+    color: black;
+}
+#links a:hover{
+    font-size: 18px;
+    position:relative;
+}
+#links li {
+    margin-left: 10%;
+    list-style: none;
+}
