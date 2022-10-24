@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DashboardController;
+
 /**
  * Rotas do index
  */
@@ -11,7 +12,7 @@ Route::get('/', function () {
     return view('ietec');
 })->name('home');
 
-Route::get('/quem_somos', function (){
+Route::get('/quem_somos', function () {
     return view('/quem_somos');
 })->name('sobre');
 
@@ -44,6 +45,6 @@ Route::get('/monitoramento', function () {
     return view('/monitoramento');
 })->name('monitoramento');
 
-Route::get('/modelo', function (){
+Route::get('/modelo', function () {
     return view('/layouts/modelo');
 })->name('modelo');

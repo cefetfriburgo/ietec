@@ -1,24 +1,28 @@
-@extends('layouts.modelo')
+<!DOCTYPE html>
+<html lang="en">
 
-@section ('complementos_css')
-<link href='css/dashboard.css' rel="stylesheet" type="text/css">
-@endsection
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ietec dashboard</title>
+    <link href='css/dashboard.css' rel="stylesheet" type="text/css">
+</head>
 
-@section('title_pag')
-IETEC - Principal
-@endsection
 
 <body>
-    @section ('menu')
-    <nav id="Navegacao">
-        <ul id="NavegacaoUl">
-            <li class="NavegacaoLi link"><a href="{{route('monitoramento')}}">Monitoramento</a></li>
-            <li class="NavegacaoLi link"><a href="{{route('planejamento')}}">Planejamento</a></li>
-        </ul>
-    </nav>
-    @endsection
+    <header>
+        <a href="{{route('home')}}">
+            <img id="LogoIetec" src="\img\ietec_logo.png">
+        </a>
+        <nav id="Navegacao">
+            <ul id="NavegacaoUl">
+                <li><a href="{{route('monitoramento')}}">Monitoramento</a></li>
+                <li><a href="{{route('planejamento')}}">Planejamento</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    @section('principal')
     <section id="graphic_small">
         <div class="GraphicSmall">
             <canvas id="barSmallChart"></canvas>
@@ -51,14 +55,8 @@ IETEC - Principal
             <img src="/img/trofeu1.png" alt="">
         </figure>
     </section>
-    @endsection
-
-
-
 </body>
-@section('scripts')
 <script src="/js/chart.js"></script>
 <script src="/js/dash.js"></script>
-@endsection
 
 </html>

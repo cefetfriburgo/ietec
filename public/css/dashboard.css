@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: white;
-    display: block;
+    display: flex;
     margin: 0 auto;
 }
 
@@ -21,12 +21,12 @@ header {
 }
 
 #Navegacao {
-    margin-left: 75%;
+    margin-left: 70%;
     margin-top: 1.8%;
 }
 
 #NavegacaoUl {
-    display: flex;    
+    display: flex;
 }
 
 .NavegacaoLi:first-child {
@@ -47,7 +47,7 @@ header {
 }
 
 .link:hover {
-    background-color: gray;   
+    background-color: gray;
 }
 
 /* Graficos Pequenos */
@@ -73,7 +73,7 @@ header {
 #graphic_big {
     display: flex;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .GraphicBig {
@@ -91,5 +91,5 @@ header {
     background-color: white;
     border: 1px solid black;
     border-radius: 10px 0px 10px 0px;
-    margin-top: 20px;
+    margin-top: 60px;
 }

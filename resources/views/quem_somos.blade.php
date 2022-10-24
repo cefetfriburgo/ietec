@@ -23,7 +23,8 @@
     </header>
 
     <div class="box_somos">
-        <h2>O que fazemos</h2>
+        <h2>O que fazemos?</h2>
+        <br>
         <p> Uma iniciativa destinada a abrigar e fortalecer projetos inovadores e novas empresas de base tecnológica, por um período de tempo limitado.
             A IETEC-CEFET/RJ - Incubadora de Empresas Tecnológicas do CEFET/RJ - possui um ambiente físico que se destina a abrigar negócios e projetos que necessitem de um desenvolvimento tecnológico, de formação empreendedora e de estruturação gerencial.
             Constitui, assim, um meio inovador que gera condições para aumentar as chances de sobrevivência, crescimento e consolidação de microempresas inovadoras.
