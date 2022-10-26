@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='css/app.css' rel="stylesheet" type="text/css">
+    <link href='css/styles.css' rel="stylesheet" type="text/css">
     <link rel="Icon" href="/img/ietec_logo.png">
     <title>IETEC - Cefet RJ</title>
 </head>
 
-<body>
-    <header>
+<body id="home_Body">
+    <header id="home_Header">
         <div class="central_header">
-            <div class="menu">
+            <div class="homeMenu">
                 <a href="{{route('home')}}">Inicio</a>
                 <a href="{{route('login')}}">Login</a>
                 <a href="{{route('sobre')}}">Quem somos</a>

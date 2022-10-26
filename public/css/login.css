@@ -1,11 +1,11 @@
-body {
-    background: rgb(255,255,255);
-    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,63,92,1) 100%);
+#body_login {
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 63, 92, 1) 100%);
     /* background: url(fundo.jpg) no-repeat top center; */
 }
 
 /* formatação do campo login */
-fieldset {
+#fd_login {
     align-items: center;
     text-align: center;
     margin: 5em auto;
@@ -18,7 +18,7 @@ fieldset {
     border: none;
 }
 
-fieldset legend {
+#fd_login legend {
     margin: 0 auto;
 }
 

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="/css/login.css">
-    <link href='css/login.css' rel="stylesheet" type="text/css">
+    <link href='css/styles' rel="stylesheet" type="text/css">
     <title>Login</title>
 </head>
 
-<body>
+<body id="body_login">
     <form action="{{route('dash')}}">
-        <fieldset>
+        <fieldset id="fd_login">
             <legend> <img src="/img/perfil.png" alt=""> </legend>
             <div class="login_area">
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail">

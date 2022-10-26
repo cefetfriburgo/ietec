@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='/css/styles.css' rel="stylesheet" type="text/css">
     <title>Ietec dashboard</title>
-    <link href='css/dashboard.css' rel="stylesheet" type="text/css">
 </head>
 
 
-<body>
-    <header>
+<body id="dash_body">
+    <header id="header_dash">
         <a href="{{route('home')}}">
             <img id="LogoIetec" src="\img\ietec_logo.png">
         </a>
@@ -19,6 +19,7 @@
             <ul id="NavegacaoUl">
                 <li class="NavegacaoLi link"><a href="{{route('monitoramento')}}">Monitoramento</a></li>
                 <li class="NavegacaoLi link"><a href="{{route('planejamento')}}">Planejamento</a></li>
+                <li class="NavegacaoLi link"><a href="{{route('relatorio')}}">Relatório</a></li>
             </ul>
         </nav>
     </header>

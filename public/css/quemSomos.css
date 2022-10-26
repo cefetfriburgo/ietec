@@ -1,16 +1,11 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-.QS_header {
+#headerQS{
     display: flex;
     flex-wrap: 1100px;
     margin: 0 auto;
     padding: 0 2%;
 }
 
-.menu_QS {
+#QS_menu {
     width: 50%;
     padding-top: 30px;
     margin: 0 auto;
@@ -18,24 +13,19 @@
     align-items: center;
 }
 
-.menu_QS a {
+#QS_menu a{
     color: black;
     text-decoration: none;
     font-weight: bold;
     margin-right: 15px;
 }
 
-.menu_QS a:hover {
+
+#QS_menu a:hover {
     font-size: 20px;
     animation: 2s;
     padding: 2%;
 
-}
-
-footer {
-    padding: 70px 0;
-    margin-top: 2%;
-    background-color: lightblue;
 }
 
 .box_somos {
@@ -47,26 +37,30 @@ footer {
     border: solid black 3px;
     border-radius: 100px 20px;
 }
-
-.box_somos h2 {
+.box_somos h2{
     text-align: center;
 }
 
-.row {
+#QS_footer {
+    padding: 70px 0;
+    margin-top: 2%;
+    background-color: lightblue;
+}
+#row {
     display: flex;
 }
 
-.footer-col {
+.footer-col_QS {
     padding-left: 230px;
 
 }
 
-.footer-col li {
+.footer-col_QS li {
     list-style: none;
 
 }
 
-.footer-col h4 {
+.footer-col_QS h4{
     font-size: 18px;
     color: black;
     text-transform: capitalize;
@@ -75,7 +69,7 @@ footer {
     position: relative;
 }
 
-.footer-col h4::before {
+.footer-col_QS h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -86,7 +80,7 @@ footer {
     width: 50px;
 }
 
-.footer-col ul li a {
+.footer-col_QS ul li a{
     font-size: 16px;
     text-transform: capitalize;
     color: black;
@@ -96,7 +90,7 @@ footer {
     transition: all 0.3s ease;
 }
 
-.footer-col ul li a:hover {
+.footer-col_QS ul li a:hover {
     color: #000000;
     padding-left: 8px;
 }

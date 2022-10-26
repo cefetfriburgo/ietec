@@ -1,0 +1,93 @@
+#body_mn {
+    background-color: lightblue
+}
+
+/* Header */
+
+#header_mn {
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#logo_Ietec {
+    width: 95px;
+    padding: 4px;
+    margin: 8px;
+}
+
+#link_mn {
+    margin-left: 60%;
+    margin-top: 1.8%;
+}
+
+#link_mnlUl {
+    display: flex;
+}
+
+.link_mnlLi:first-child {
+    margin-right: 10px;
+}
+
+.link_mnLi {
+    list-style: none;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.link_mnLi:last-child {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.link_mnLi a {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    background-color: gray;
+}
+
+
+/* Main */
+#principalMn {
+    width: 30%;
+    margin: 0 auto;
+    background-color:ghostwhite;
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+#formMn {
+    color: black;
+    margin-left: 27%;
+}
+
+.estiloInputTxt {
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.estiloInputDate {
+    border-radius: 5px;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+#btProcura {
+    border-radius: 5px;
+    padding-left: 77px;
+    padding-right: 77px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}

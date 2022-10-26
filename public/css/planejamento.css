@@ -1,5 +1,5 @@
 /* Header */
-header {
+#header_planejamento {
     display: flex;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -10,7 +10,7 @@ header {
 
 }
 
-header nav {
+#header_planejamento nav {
     margin-left: 60%;
 }
 
@@ -22,10 +22,12 @@ header nav {
     text-decoration: none;
     color: black;
 }
-#links a:hover{
+
+#links a:hover {
     font-size: 18px;
-    position:relative;
+    position: relative;
 }
+
 #links li {
     margin-left: 10%;
     list-style: none;

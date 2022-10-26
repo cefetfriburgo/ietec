@@ -1,6 +1,56 @@
-body {
+#rel_body {
     background-color: #4c86af;
 }
+
+
+#header_rel {
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#LogoIetec {
+    width: 95px;
+    padding: 4px;
+}
+
+#link_rel {
+    margin-left: 65%;
+    margin-top: 1.8%;
+}
+
+#link_relUl {
+    display: flex;
+}
+
+.link_relLi:first-child {
+    margin-right: 10px;
+}
+
+.link_relLi {
+    list-style: none;
+    background-color: lightgray;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.link_relLi:last-child{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.link_relLi a {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    background-color: gray;
+}
+
 
 #titulo_relatorio {
     color: white;
@@ -20,15 +70,16 @@ body {
     border-style: none;
 }
 
-.pesquisar {
+#pesquisar {
     cursor: pointer;
     background-color: grey;
     border-radius: 5px;
+    padding: 5px;
     box-shadow: none;
     border-style: none;
 }
 
-.pesquisar:hover {
+#pesquisar:hover {
     background-color: #cccccc;
 }
 
@@ -46,7 +97,7 @@ body {
     margin-left: 50px;
 }
 
-th, td {
+.th_rel, .td_rel {
     text-align: center;
     border-bottom: 1px solid black;
 }
@@ -68,6 +119,7 @@ th, td {
     border-radius: 5px;
     color: white;
     border-style: none;
+    padding: 5px;
 }
 
 #tr_titulo {
@@ -75,7 +127,7 @@ th, td {
     color: white;
 }
 
-th {
+.th_rel {
     padding-top: 4px;
     padding-bottom: 4px;
 }

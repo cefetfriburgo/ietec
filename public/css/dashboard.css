@@ -1,15 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-body {
+#dash_body {
     background-color: darkslateblue;
 }
 
 /* Header */
 
-header {
+#header_dash {
     background-color: white;
     display: flex;
     margin: 0 auto;
@@ -21,7 +16,7 @@ header {
 }
 
 #Navegacao {
-    margin-left: 70%;
+    margin-left: 65%;
     margin-top: 1.8%;
 }
 
@@ -39,6 +34,12 @@ header {
     border: 1px solid black;
     border-radius: 10px;
     padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.NavegacaoLi:last-child{
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .NavegacaoLi a {

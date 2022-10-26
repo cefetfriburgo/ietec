@@ -4,19 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href='css/styles.css' rel="stylesheet" type="text/css">
     <title>IETEC | @yield('title')</title>
-    <link rel="stylesheet" href="/css/planejamento.css">
-
 </head>
 
 <body>
-    <header>
+    <header id="header_planejamento">
         <a href="{{route('home')}}">
             <img src="/img/ietec_logo.png" alt="Logo" width="100px">
         </a>
         <nav>
             <ul id="links">
+                <li><a href="{{route('relatorio')}}">Relatório</a></li>
                 <li><a href="{{route('monitoramento')}}">Monitoramento</a></li>
                 <li><a href="{{route('dash')}}">Dashboard</a></li>
             </ul>

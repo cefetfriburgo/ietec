@@ -1,0 +1,113 @@
+/* Cores:
+        1. #003f5c
+        2. #4c86af
+        3. #547e9a
+
+ */
+
+/* Estrutura básica do HTML  */
+
+#home_Body {
+    margin: 0;
+    background-color: white;
+    color: black;
+    font-family: "Arial", Helvetica, sans-serif;
+    max-width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Header */
+.central_header {
+    display: flex;
+    flex-wrap: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+#home_Header {
+    height: 200px;
+    padding: 20px 0;
+
+}
+
+.homeMenu {
+    width: 50%;
+    padding-top: 30px;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.homeMenu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.homeMenu a:hover {
+    text-decoration: underline;
+
+}
+
+/* Circulo com icone do dinheiro */
+/* section */
+.sobre {
+    margin-top: -20%;
+    height: 90%;
+}
+
+.circulo {
+    position: relative;
+    left: 800px;
+    width: 1200px;
+    height: 1200px;
+    border-radius: 50%;
+    background-color: #003f5c;
+    margin-top: -2%;
+}
+
+#predio_icon {
+    width: 40%;
+    margin-top: -6%;
+    margin-left: -5%;
+}
+
+
+/* Textos do index */
+#ietec {
+    color: #547e9a;
+}
+
+.texto_sobre {
+    color: black;
+    margin-left: 10%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.texto_sobre h1 {
+    font-size: 50px;
+}
+
+.texto_sobre p {
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+
+}
+
+.texto_sobre button {
+    text-decoration: none;
+    border: 0;
+    color: white;
+    background-color: #003f5c;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}

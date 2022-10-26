@@ -5,21 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/quemSomos.css">
+    <link href='css/styles.css' rel="stylesheet" type="text/css">
     <link rel="Icon" href="/img/ietec_logo.png">
     <title>Sobre</title>
 </head>
 
 <body>
-    <header>
-        <div class="QS_header">
-            <div class="menu_QS">
+    <header id="headerQS">
+            <div id="QS_menu">
                 <a href="{{route('home')}}">Inicio</a>
                 <a href="{{route('login')}}">Login</a>
             </div>
-            <!--menu-->
-        </div>
-        <!--header-->
     </header>
 
     <div class="box_somos">
@@ -35,44 +31,44 @@
             Assim, a IETEC perssegue o interesse público que busca soluções inovadoras para os seus processos, produtos e serviços oferecendo um espaço de diálogo e de trocas de experiências.</p>
     </div>
 
-    <div>
-        <img src="" alt="">
-    </div>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
+    <footer id="QS_footer">
+        <div id="container">
+            <div id="row">
+                <div class="footer-col_QS">
                     <h4>Conteúdos</h4>
                     <ul>
                         <li>
-                            <a href="#" target="blank">Apresentação</a>
+                            <a href="#" target="blank" >Apresentação</a>
                         </li>
                         <li>
-                            <a href="#" target="blank">Direção</a>
+                            <a href="#" target="blank" >Direção</a>
                         </li>
                         <li>
-                            <a href="#" target="blank">Conselhos</a>
+                            <a href="#" target="blank" >Conselhos</a>
                         </li>
                         <li>
-                            <a href="#" target="blank">Ouvidoria</a>
+                            <a href="#" target="blank" >Ouvidoria</a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col_QS">
                     <h4>Contato</h4>
                     <ul>
                         <li>
                             <a href="#" target="blank">Instagram</a>
-                            <a href="#" target="blank">Gmail</a>
+                        </li>
+                        <li>
+                            <a href="#" target="blank">e-mail</a>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-col">
+                <div class="footer-col_QS">
                     <h4>Páginas</h4>
                     <ul>
                         <li>
                             <a href="#" target="blank">Página Inicial</a>
+                        </li>
+                        <li>    
                             <a href="#" target="blank">Jogo</a>
                         </li>
                     </ul>
