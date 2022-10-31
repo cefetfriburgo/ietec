@@ -1,5 +1,5 @@
 #body_mn {
-    background-color: lightblue
+    background-color: #00729e;
 }
 
 /* Header */
@@ -57,9 +57,13 @@
 
 /* Main */
 #principalMn {
+    display: flex;
+}
+
+#formularioMn {
     width: 30%;
-    margin: 0 auto;
-    background-color:ghostwhite;
+    margin-left: 50px;
+    background-color:#5cd5ff;
     border-radius: 20px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -90,4 +94,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
     cursor: pointer;
+}
+
+#arquivosMn {
+    background-color:rgb(130, 200, 233);
+    width: 50%;
+    height: 586px;
+    margin-left: 110px;
+    border-radius: 20px;
 }

@@ -21,7 +21,6 @@
             <div class="login_area">
                 <input type="submit" value="Logar" id="button">
             </div>
-
         </fieldset>
     </form>
 </body>
