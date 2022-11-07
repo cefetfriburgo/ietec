@@ -29,31 +29,44 @@
                 <h2>Pesquisa</h2><br>
                 <label>Nome da empresa: </label><br>
                 <input type="text" name="nomeEmpresaMn" id="nomeEmpresaMn" class="estiloInputTxt"><br><br>
+
                 <label>Tipo de empresa: </label><br>
                 <input type="text" name="tipoEmpresaMn" id="tipoEmpresaMn" class="estiloInputTxt"><br><br>
+
                 <label>Data de Incubação: </label><br>
                 <input type="date" name="dataInicioMn" id="dataInicioMn" class="estiloInputDate"><br><br>
+
                 <label>Data de graduação: </label><br>
                 <input type="date" name="dataFimMn" id="dataFimMn" class="estiloInputDate"><br><br>
+
                 <label>Acompanhamento: </label><br>
                 <input type="checkbox" name="bimestreMn" id="bimestreMn">
+
                 <label>Bimestre</label><br>
                 <input type="checkbox" name="trimestreMn" id="trimestreMn">
                 <label>Trimestre</label><br><br>
+
                 <label>Necessidade de prorrogação: </label><br>
                 <input type="checkbox" name="prorrogacaoS_Mn" id="prorrogacaoS_Mn">
                 <label> Sim </label><br>
                 <input type="checkbox" name="prorrogacaoN_Mn" id="prorrogacaoN_Mn">
                 <label> Não </label><br><br>
                 <label>Atualizado: </label><br>
-                <input type="date" name="AtualizaCaoMn" id="AtualizaCaoMn" class="estiloInputDate"><br><br>
+                <input type="date" name="AtualizaCaoMn" id="AtualizacaoMn" class="estiloInputDate"><br><br>
 
                 <input type="submit" value="Procurar" id="btProcura">
             </form>
         </div>
-        <div id="arquivosMn">
+        <div id="arquivosMn"><br><br>
+            <span id="error"></span>
+            <span id="NomeEmpresaMN"></span><br><br>
+            <span id="TipoEmpresaMN"></span><br><br>
+            <span id="DataInicioMN"></span><br><br>
+            <span id="DataFimMN"></span><br><br>
+            <span id="DataAtualizacaoMN"></span>
+
         </div>
     </main>
 </body>
-
+    <script src="/js/monitoramento.js"></script>
 </html>

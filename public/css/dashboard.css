@@ -16,16 +16,11 @@
 }
 
 #Navegacao {
-    margin-left: 65%;
+    margin-left: 60%;
     margin-top: 1.8%;
 }
-
 #NavegacaoUl {
     display: flex;
-}
-
-.NavegacaoLi:first-child {
-    margin-right: 10px;
 }
 
 .NavegacaoLi {

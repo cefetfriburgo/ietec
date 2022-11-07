@@ -1,8 +1,6 @@
 #rel_body {
     background-color: #4c86af;
 }
-
-
 #header_rel {
     background-color: white;
     display: flex;
@@ -16,16 +14,12 @@
 }
 
 #link_rel {
-    margin-left: 65%;
+    margin-left: 60%;
     margin-top: 1.8%;
 }
 
 #link_relUl {
     display: flex;
-}
-
-.link_relLi:first-child {
-    margin-right: 10px;
 }
 
 .link_relLi {
@@ -57,7 +51,7 @@
 }
 
 #principal_relatorio {
-    max-width: 1000px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -83,58 +77,12 @@
     background-color: #cccccc;
 }
 
-#lista_relatorio {
-    text-align: right;
+#div_relatorio {
+    width: 0100%;
+    height: 400px;
     background-color: white;
     padding-top: 20px;
     border-radius: 10px;
     border-style: none;
 }
 
-#tabela_relatorio {
-    width: 900px;
-    margin-bottom: 10px;
-    margin-left: 50px;
-}
-
-.th_rel, .td_rel {
-    text-align: center;
-    border-bottom: 1px solid black;
-}
-
-.tr_r:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.tr_r:hover {
-    background-color: #ddd;
-}
-
-#gerar {
-    cursor: pointer;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    background-color: #003f5c;
-    border-radius: 5px;
-    color: white;
-    border-style: none;
-    padding: 5px;
-}
-
-#tr_titulo {
-    background-color: #003f5c;
-    color: white;
-}
-
-.th_rel {
-    padding-top: 4px;
-    padding-bottom: 4px;
-}
-
-.lixeira {
-    cursor: pointer;
-    background-color: red;
-    border-style: none;
-    border-radius: 5px;
-}

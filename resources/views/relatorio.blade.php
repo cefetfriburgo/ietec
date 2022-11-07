@@ -26,40 +26,20 @@
 
     <main id="principal_relatorio">
         <h1 id="titulo_relatorio">Relatórios</h1>
-        <div id="filtro">
-            <input type="Date">
-            <input type="text" placeholder="Empresas">
-            <input type="text" placeholder="Ordem">
-            <input type="button" value="Pesquisar" id="pesquisar">
-
-        </div>
-        <div id="lista_relatorio">
-            <table id="tabela_relatorio">
-                <tr id="tr_titulo">
-                    <th class="th_rel">Data</th>
-                    <th class="th_rel">Empresa</th>
-                    <th class="th_rel">Ações</th>
-                </tr>
-                <tr class="tr_r ">
-                    <td class="td_rel">20/12/2022</td>
-                    <td class="td_rel">joniConstruções</td>
-                    <td class="td_rel">
-                        <button class="lixeira" type="submit">Apagar</button>
-                    </td>
-                </tr>
-                <tr class="tr_r ">
-                    <td class="td_rel">12/02/2022</td>
-                    <td class="td_rel">Rezende</td>
-                    <td class="td_rel"><button class="lixeira" type="submit">Apagar</button></td>
-                </tr>
-                <tr class="tr_r ">
-                    <td class="td_rel">21/07/2022</td>
-                    <td class="td_rel">MCdonalds</td>
-                    <td class="td_rel"><button class="lixeira" type="submit">Apagar</button></td>
-                </tr>
-            </table>
-            <button id="gerar" type="submit">Gerar Relatório</button>
+        <form id="filtro">
+            <input type="Date" id="dataInput">
+            <input type="text" placeholder="Empresas" id="empresaInput">
+            <input type="text" placeholder="Tipo" id="tipoInput">
+            <input type="submit" value="Pesquisar" id="pesquisar">
+        </form>
+        
+        <div id="div_relatorio">
+            <span id="erro"></span>
+            <span id="data"></span><br><br>
+            <span id="Empresa"></span><br><br>
+            <span id="Tipo"></span>
         </div>
     </main>
 </body>
+    <script src="/js/relatorio.js"></script>
 </html>

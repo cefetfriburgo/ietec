@@ -54,7 +54,6 @@
     background-color: gray;
 }
 
-
 /* Main */
 #principalMn {
     display: flex;
@@ -99,7 +98,13 @@
 #arquivosMn {
     background-color:rgb(130, 200, 233);
     width: 50%;
-    height: 586px;
+    height: 600px;
     margin-left: 110px;
     border-radius: 20px;
+}
+
+#arquivosMn span {
+    margin-left: 30%;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;    
 }
