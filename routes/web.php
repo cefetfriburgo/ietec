@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RelatorioController;
 use App\Http\Controllers\EmpresaController;
+use App\Http\Controllers\PlanejamentoController;
+use App\Http\Controllers\MonitoramentoController;
 
 /**
  * Regra para formação de rota:
@@ -77,7 +79,7 @@ function () {
     return view('dashboard');
 })->name('dash');
 */
-/*
+/*  
 Rotas do Dashboard
 */
 Route::get('/dashboard/listSetor'
@@ -104,15 +106,16 @@ Route::get('/relatorios', [RelatorioController::class, 'relatorio'])->name('rela
 
 Route::get('/relatorios/{id}', [RelatorioController::class, 'relEmpresa']);
 
+/* Rotas Planejamento */
 
-Route::get('/planejamento', function () {
-    return view('/planejamento');
-})->name('planejamento');
+Route::get('/planejamento', [PlanejamentoController::class, 'planejamento'])->name('planejamento');
 
-Route::get('/monitoramento', function () {
-    return view('/monitoramento');
-})->name('monitoramento');
+/*Rotas monitoramento*/
+
+Route::get('/monitoramento', [MonitoramentoController::class, 'monitoramento'])->name('monitoramento');
 
 Route::get('/modelo', function () {
     return view('/layouts/modelo');
 })->name('modelo');
+
+
