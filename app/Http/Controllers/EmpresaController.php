@@ -8,8 +8,17 @@ use App\Models\PlanejamentoEmpresa;
 
 class EmpresaController extends Controller {
 
+    public function list() {
+        $scriptSQL = "SELECT * from empresa ";
+        return "['CEFET', 'HAGA', '3F']";
+    }
 
-    public function listaPlanejamento() {
+    public function get($id) {
+        $scriptSQL = "SELECT * from empresa where id=".$id;
+        return "uma determinada empresa com id ". $id;
+    }
+
+    public function listaPlanejamento($id) {
         $data = [];
         $data['planos'] = PlanejamentoEmpresa::all();
         return view('empresa.planejamento', $data);

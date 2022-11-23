@@ -1,6 +1,5 @@
-let xhttp = new XMLHttpRequest();
 
-let url = '/dashboard/empresasSetor';
+
 
 let criaOpcoes = (tamRelativo, habilitaLegenda, titulo) => {
   return {
@@ -12,56 +11,58 @@ let criaOpcoes = (tamRelativo, habilitaLegenda, titulo) => {
     }
   }
 }
-const carregaGrafSetor = (containerId, tipoGraf, dados, opcoes) => {
-  const elemHTML = document.getElementById(containerId)
-  new Chart(elemHTML, {type: tipoGraf,data: dados, options: opcoes});
-}
 
-xhttp.onreadystatechange = function() {
-  if(this.readyState==4 && this.status==200) {
-    let respostaServidor = JSON.parse(this.responseText);
-    console.log(respostaServidor);
+const criaGrafico = (url, opcoes, seletorContainerHTML, tipoGrafico, criaOptFunc) => {
+  let xhttp = new XMLHttpRequest();
+  
+  const carregaData = (respostaServidor) => {
     let data = {}
     data.labels = respostaServidor.labels
     data.datasets = []
     objDataset = {}
-
+    
     objDataset.label = respostaServidor.datasets[0].label
     objDataset.backgroundColor = respostaServidor.datasets[0].backgroundColor
     objDataset.data = respostaServidor.datasets[0].data
-
+    
     data.datasets.push(objDataset)
-    const opcoes = criaOpcoes(false, false, 'Empresas por Setor')
-    carregaGrafSetor("bar-chart", "bar", data, criaOpcoes(false, false, opcoes))
+    return data
   }
+  
+  const carregaGrafico = (containerId, tipoGraf, dados, opcoes) => {
+    const elemHTML = document.querySelector(containerId)
+    new Chart(elemHTML, {type: tipoGraf,data: dados, options: opcoes});
+  }
+  
+  xhttp.onreadystatechange = function() {
+    if(this.readyState==4 && this.status==200) {
+      let respostaServidor = JSON.parse(this.responseText);
+      let data = carregaData(respostaServidor)
+      console.log(opcoes)
+      carregaGrafico(seletorContainerHTML, tipoGrafico, data, opcoes)
+    }
+  }
+  
+  xhttp.open('GET', url, false);
+  xhttp.send();
+
 }
 
-xhttp.open('GET', url, false);
-xhttp.send();
+//cria grafico de setor
+criaGrafico('/dashboard/listSetor'
+            , criaOpcoes(false, false, 'Empresas por Setor')
+            ,"#bar-chart", "bar")
 
-// GraficosPequenos
-new Chart(document.getElementById("barSmallChart"), {
-    type: 'bar',
-    data: {
-      labels: ["JS", "PHP", "HTML", "CSS", "PYTHON"],
-      datasets: [
-        {
-          label: "Mais Utilizada",
-          backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
-          data: [7000, 4090, 3650, 2514, 11111]
-        }
-      ]
-    },
-    options: {
-      legend: { display: false },
-      title: {
-        display: true,
-        text: 'Melhor Linguagem'
-      }
-    }
-  });
+
+criaGrafico('/dashboard/maisUtilizadas', 
+            criaOpcoes(false, true, 'Mais utilizadas')
+            ,"#barSmallChart", "bar")
+
+criaGrafico('/dashboard/populacao'
+          , criaOpcoes(false, true, 'População (mi)')
+            , "#pizzaSmall", "pie")
   
-  
+            /*
   new Chart(document.getElementById("pizzaSmall"), {
     type: 'pie',
     data: {
@@ -81,7 +82,7 @@ new Chart(document.getElementById("barSmallChart"), {
       }
     }
   });
-  
+  */
   new Chart(document.getElementById("teiaSmall"), {
     type: 'radar',
     data: {
