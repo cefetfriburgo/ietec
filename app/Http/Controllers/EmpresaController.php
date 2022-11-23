@@ -10,6 +10,7 @@ class EmpresaController extends Controller {
 
     public function list() {
         $scriptSQL = "SELECT * from empresa ";
+        
         return "['CEFET', 'HAGA', '3F']";
     }
 

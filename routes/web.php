@@ -100,9 +100,10 @@ Route::get('/empresas/{id}', [EmpresaController::class, 'get']);
 /*
     Rotas do RelatorioController
 */        
-Route::get('/relatorio', function () {
-    return view('/relatorio');
-})->name('relatorio');
+Route::get('/relatorios', [RelatorioController::class, 'relatorio'])->name('relatorio');
+
+Route::get('/relatorios/{id}', [RelatorioController::class, 'relEmpresa']);
+
 
 Route::get('/planejamento', function () {
     return view('/planejamento');

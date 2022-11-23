@@ -42,7 +42,6 @@ class DashboardController extends Controller {
     }
 
     public function getDash() {
-        
         return view('dashboard');
     }
 }
