@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>IETEC | @yield('title')</title>
-    <link rel="stylesheet" href="/app.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='css/styles.css' rel="stylesheet" type="text/css">
+    <title>IETEC | @yield('titulo')</title>
 </head>
-<body>
 
-
-
-    <header class="container">
-        <a href="{{route('home')}}" class="logo">
-            <img class="logo" src="/img/ietec_logo.png" alt="Logo da IETEC">
+<body id="rel_body">
+    <header id="header_rel">
+        <a href="{{route('home')}}">
+            <img id="LogoIetec" src="/img/ietec_logo.png">
         </a>
-
+        <nav id="link_rel">
+            <ul id="link_relUl">
+                <li class="link_relLi link"><a href="{{route('dash')}}">Dashboard</a></li>    
+                <li class="link_relLi link"><a href="{{route('monitoramento')}}">Monitoramento</a></li>
+                <li class="link_relLi link"><a href="{{route('planejamento')}}">Planejamento</a></li>
+                <li class="link_relLi link"><a href="{{route('relatorio')}}">Relatórios</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <nav class="side-bar">
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="{{route('planejamento')}}">
-                        <span class="mx-2"></span>Planejamento</a>
-                </li>
-                <li> 
-                    <a href="{{route('monitoramento')}}">
-                        <span class="mx-2"></span>Monitoramento</a>
-                </li>
-                <li> <a href="{{route('relatorio')}}">
-                        <span class="mx-2"></span>Relatório</a>
-                </li>
-            </ul>
-        </nav>  
-        
-        <main class="col-auto col-md-9 col-xl-10 px-sm-10 px-0">
-        @yield('main-content')
-        </main>
-    </div>
-</body>
 
+    <main>
+        @yield('conteudo')
+    </main>
+</body>
+    @yield('scripts')
+    
 </html>

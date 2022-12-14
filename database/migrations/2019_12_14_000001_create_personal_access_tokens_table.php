@@ -31,6 +31,26 @@ return new class extends Migration
             $table->integer('ano')->nullable();
             $table->date('data_realizacao')->nullable();
         });
+
+        Schema::create('setor', function (Blueprint $table) {
+            $table->charset= 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
+            $table->id();
+            $table->string('nome', 45);
+        });
+
+        Schema::create('empresa', function (Blueprint $table) {
+            $table->charset= 'utf8mb4';
+            $table->collation = 'utf8mb4_unicode_ci';
+            $table->id();
+            $table->string('nome', 45);
+            $table->string('descricao', 300);
+            $table->binary('logo')->nullable();
+            $table->char('status', 1)->default('a');
+            $table->decimal('capital_social', 8,2);
+            $table->unsignedBigInteger('setor_id');
+            $table->foreign('setor_id')->references('id')->on('setor');
+        });
     }
 
     /**

@@ -98,6 +98,7 @@ Route::get('/dashboard/populacao'
 
 Route::get('/empresas', [EmpresaController::class, 'list']);
 Route::get('/empresas/{id}', [EmpresaController::class, 'get']);
+Route::get('/empresas/nome/{nome}', [EmpresaController::class, 'getByName']);
 
 /*
     Rotas do RelatorioController
@@ -105,7 +106,7 @@ Route::get('/empresas/{id}', [EmpresaController::class, 'get']);
 Route::get('/relatorios', [RelatorioController::class, 'relatorio'])->name('relatorio');
 
 Route::get('/relatorios/{id}', [RelatorioController::class, 'relEmpresa']);
-
+Route::get('/relatorios/{setor_id}/{ano}', [RelatorioController::class, 'relFatSetor']);
 /* Rotas Planejamento */
 
 Route::get('/planejamento', [PlanejamentoController::class, 'planejamento'])->name('planejamento');
